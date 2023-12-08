@@ -1,43 +1,18 @@
-# YOLO Streamlit Dashbord
-Display predicted Video, Images and webcam using YOLO models (**YOLOv7** & **YOLOv8**) with Streamlit
+# ThreatFinder: YoloV7-Powered Detection of Weapons and Violence
+Display detected weapons and violence from Video, Images and Webcam using YOLOv7 with Streamlit.
 
-### Sample Streamlit YOLOv7 Dashboard
-Streamlit Dashboard: https://naseemap47-streamlit-yolov7-app-deploy-bfr4xt.streamlitapp.com/
-
-## Docker
-dockerhub: https://hub.docker.com/repository/docker/naseemap47/streamlit-yolo
-
-#### 1. Pull Docker Image
-```
-docker pull naseemap47/streamlit-yolo
-```
-#### 2. Change permistion
-```
-sudo xhost +si:localuser:root
-```
-#### 3. RUN Docker Image
-```
-docker run --gpus all -e DISPLAY=$DISPLAY -v /tmp/.X11-unix/:/tmp/.X11-unix --ipc=host --device=/dev/video0:/dev/video0 -p 8502 -it --rm naseemap47/streamlit-yolo
-```
-
-## 🚀 New Update (10/02/2023)
-Integrated new YOLOv8 model, now you can run YOLOv8 model on RTSP, Webcam, Video and Image
+ThreatFinder is a powerful anomaly detection system that utilizes YOLOv7, a cutting-edgedeep learning-based object detection algorithm, to detect rare and potentially dangerous events such as the presence of weapons and violence in real-time video streams.
 
 ## Streamlit Options
-### Modes
- - RTSP
  - Webcam
  - Video
  - Image
  
- ## Sample Streamlit Dashboard Output
+ ## Suspicious Activity Detection Dashboard
  
- [out.webm](https://user-images.githubusercontent.com/88816150/193816239-b351c3d6-1d9a-4820-87b5-0cfec1ad5d90.webm)
+ [out.png](https://github.com/esc4norrr/threatfinder-yolov7/blob/main/demo/screenshot1.png?raw=true)
 
- ## StepUp
-```
-git clone https://github.com/naseemap47/streamlit-yolov7.git
-cd streamlit-yolov7
+
 ```
 Install dependency
 ```
